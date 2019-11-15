@@ -7,7 +7,7 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  if text.match(/un\w+ing/)
+  if text.scan(/un\w+ing/)
     true 
   else
     false
@@ -15,7 +15,7 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  if text.match(/^\w{5}\s/)
+  if text.grep(/\b\w{5}\b/)
     true
   else
     false
