@@ -25,5 +25,10 @@ end
 end
 
 def valid_phone_number?(phone)
-  
+  real_number=phone.index
+  if (real_number==10)
+    true
+  else
+    false
+  end
 end
