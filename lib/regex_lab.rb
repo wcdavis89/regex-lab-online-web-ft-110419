@@ -25,8 +25,7 @@ end
 end
 
 def valid_phone_number?(phone)
-  real_number=phone.index
-  if (real_number.index==10)&&(real_number.match(//))
+  if phone.match(/[0-9]/))
     true
   else
     false
